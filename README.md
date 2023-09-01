@@ -1,38 +1,34 @@
-# Integration Map
+# Maps
 # Project Details
-## Project Name: Integration Maps
 ## Team Members:
-               Catherine M Kim - ckim167
-               Lynda Winnie Umuhoza - lumuhoza
-               Afia Akosah - aakosah
-## Link to repo: https://github.com/cs0320-f2022/integration-aakosahb-ckim167-lumuhoza
-### Estimated hours spent: ~16
+               Catherine M Kim - @ckim167
+               Lynda Winnie Umuhoza - @lumuhoza
+               Afia Akosah - @aakosahb
 # High Level Design Choices:
 ###  Backend:
-We added our backend code from Sprint 2. Added a MapHandler for
-handling the functionality of the map endpoint. With the user’s given input of
+A MapHandler for handling the functionality of the map endpoint. With the user’s given input of
 boundaries, which in this case are minimum and maximum longitude, minimum and
 maximum latitude. With this, redlining data for regions within those geographical
 boundaries are provided to the user. We also created a RedlineData class that outlines
-the format of the GeoJSON file.It has attributes of the type and features.
+the format of the GeoJSON file. It has attributes of the type and features.
+
 ### Frontend:
- 
 The frontend part of our code mainly defines the user interface and what
 the user will interact with when using our app. Here, we created a map from
-react-map-gl. We initially set the location of the map to be Providence by
+react-map-gl. We initially set the location of the map to be Providence, Rhode Island by
 entering the specific latitude and longitude of Providence.
 All this is defined in one class - Map.tsx.
-S-DIST - We defined what the user gets when they click on a specific
+We also defined what the user gets when they click on a specific
 location on the map. We expect the user to get the State, City, and Name
 of the location.
-## User Stories:
+
+## Stakeholder deliverables:
 ### 1.
 The end-user stakeholder can view a map of the area they are interested in
 at the zoom level they want.
 ### 2.
 The end-user stakeholder can view an overlay of historical redlining data
-atop the area of the map they are interested in. We also successfully
-implemented the S-DIST part of this user story by allowing the user to
+atop the area of the map they are interested in. We also allow the user to
 click on an area in the redlining overlay, and get the State, City, and Name of that area.
 ### 3.
 The developer stakeholder can use our API server to access the redlining
